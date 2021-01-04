@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+/**Default VAlues **/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+li{
+    list-style-type: none;
+
+}
+a:link 
+{ 
+ text-decoration:none; 
+}
+svg{
+    width: 24px;
+    height: 24px;
+}
+div.youtube {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 48px
+                        calc(100vh - 96px )
+                        48px;
+    width: 100vw;
+    min-width: 300px;
+    height: 100vh;
+    overflow:hidden
+}
+div[get=Header]{
+    grid-column: 1;
+    grid-row: 1;
+}
+div[get=Main]{
+    grid-column: 1;
+    grid-row: 2;
+}
+div[get=Menu]{
+    grid-column: 1;
+    grid-row: 3;
+}   
+
+
+@media(min-width: 1025px) {
+    
+    div.youtube {
+        grid-template-rows: 56px
+                            1fr        
+    }
+    div[get=Header]{
+        margin-right: 17px;
+    }
+    div[get=Main]{
+        grid-column: 1;
+        grid-row: 2 / 3;
+        overflow:hidden;
+    }
+    div[get=Menu]{
+        display:none;
+    }
+}
+
+

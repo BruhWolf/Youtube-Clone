@@ -1,0 +1,316 @@
+div.ModelSearch{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    background-color: #111111cc;
+    left:0;
+    top:0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+div.Search{
+    background-color: #EEE;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.Search button{
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border: none;
+    outline: 0;
+    align-self:center;
+} 
+#SearchButton{
+    width:40px;
+    height:40px;
+    padding:8px;
+}
+div.Search button svg{
+    width:24px;
+    height:24px;
+    fill: rgb(105,105,105);
+}
+div.SearchBoxContainer{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+div.SearchBox{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+span.keyboardLogo{
+    display: none;
+}
+div.SearchBox input{
+    color:#737373;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 1px 2px 4px;
+    margin-top: 4px;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(115, 115, 115);
+}
+div.SearchBox input:focus-within{
+    border-bottom: 2px solid rgb(63,81,181);
+}
+ul.Search{
+    width: 100%;
+    height: fit-content;
+    background-color: #EEE;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+
+}
+ul.Search li{
+    background-color: white;
+    width: 100%;
+    height: 38px;
+    padding: 10px 3px 11px 8px;
+    font-size: 14px;
+    color: #1679c5;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+ul.Search li:first-child{
+    margin-top: -1px;
+
+}
+ul.Search li button{
+    color: #3366cc;
+    font-size: 13px;
+    padding-right: 3px;
+    font-weight: 400;
+    margin-top:1px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+ul.Search li[display=false]{
+    display: none;
+}
+
+
+div[ display=false ]{
+    display: none;
+}
+
+div[ display=true ]{
+    display: absolute;
+}
+
+
+
+@media(min-width: 1025px) {
+
+    div[ display=false ],    
+    div[ display=true ]{
+        display: initial
+    }
+
+    div.ModelSearch { 
+        position: relative;
+        position: initial;
+        width:  666px;
+        height: 30px;
+        margin-left: 40px;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        gap:  500px;
+
+    }
+    div.Search{
+        position: absolute ;
+        overflow: hidden;
+        background-color: transparent;
+        width: fit-content;
+        height: 30px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid rgb(204,204,204);
+        box-shadow: (238, 238, 238) 0px 1px 2px 0px inset;
+        margin-right: 24px;
+    }
+    button#arrowLeft{
+        display: none;
+    }
+
+    div.Search button{
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+        border: none;
+        outline: 0;
+        align-self:center;
+        cursor: pointer;
+    } 
+    #SearchButton{
+        width:65px;
+        height:30px;
+        padding:1px 3px;
+        background-color: rgb(248,248,248);
+        border: 1px solid rgb(204,204,204);
+        border-right:none;
+        justify-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #SearchButton:hover{
+        background-color: rgb(240,240,240);        
+    }
+    #SearchButton:hover svg{
+        
+        opacity: 1;
+    }
+    div.Search button svg{
+        width:20px;
+        height:20px;
+        opacity:0.6;
+        fill: rgb(51,51,51);
+    }
+    
+    div.Search button:hover svg{
+
+        fill: rgb(51,51,51);
+    }
+    div.SearchBoxContainer{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        
+    }
+    div.SearchBox{
+        width: 574px !important;
+        height: 100% !important;
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+    span.keyboardLogo{
+        background: url(data:image/gif;base64,R0lGODlhEwALAKECAAAAABISEv///////yH5BAEKAAIALAAAAAATAAsAAAIdDI6pZ+suQJyy0ocV3bbm33EcCArmiUYk1qxAUAAAOw==) no-repeat center;
+        display: flex !important;
+        display: initial;
+        width:27px;
+        height: 24px;
+        padding: 0 4px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+    }
+    span.keyboardLogo img{
+        border-radius: 0;
+        width: 19px;
+        height: 11px;
+    }
+    span.keyboardLogo img:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    
+    div.SearchBox input{
+        color:#737373;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 0 4px 0 5px !important;
+        margin: 0;
+        width: 100%;
+        height: 24px;
+        outline: none;
+        background-color: transparent;
+        border: none;
+        margin-bottom:1px;
+        padding: 0px 0px 0px 4px;
+    }
+    div.SearchBox input{
+        content: attr(placeholderFor1024px);
+    }
+    div.ModelSearch div.SearchBox input:focus-within{
+        border-bottom: none;
+    }
+    div.ModelSearch:focus-within  div.SearchBox{
+        border-top: 2px solid rgb(63,81,181) !important;
+        border-bottom: 2px solid rgb(63,81,181) !important;
+        border-left: 1px solid rgb(63,81,181) !important;
+        border-right: 1px solid rgb(63,81,181) !important;
+        border-radius: 2px;
+    }
+    
+    ul.Search{
+        position: absolute;
+        top: 56px;
+        width: 571px;
+        height: fit-content;
+        background-color:transparent;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        gap: 0;
+        border-radius: 4px 4px 0;
+        margin-right: 95px;
+        display: none;
+    }
+    div.ModelSearch:focus-within  ul{
+        display: flex;
+    }
+    ul.Search li{
+        background-color: white;
+        width: 100%;
+        height: 30px;
+        padding: 4px 24px 4px 10px;
+        font-size: 16px;
+        color: #52188c;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+    }
+    
+    ul.Search li:first-child{
+        margin-top: -1px;
+        height: 16  px;
+    }
+    ul.Search li button{
+        color: #3366cc;
+        font-size: 13px;
+        padding-right: 3px;
+        font-weight: 400;
+        margin-top:1px;
+
+    }
+}
+/*
+
+
+
+*/

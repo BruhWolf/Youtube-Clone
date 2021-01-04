@@ -1,0 +1,127 @@
+header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,0.2);
+}
+div.Logo h3,
+span.ToggleButton{
+    display: none;
+}
+
+div.Logo{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+div.Logo svg{
+    width: 89px;
+    height: 20px;
+}
+header img {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+div.Header-Menu{
+    display: flex;
+}
+
+header span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+}
+span.HeaderMenu-Item{
+    display: none;
+}
+
+header div.Header-Menu span svg{
+    width: 24px;
+    height: 24px;
+    fill: rgba(17, 17, 17, 0.6);
+}
+@media(min-width: 1025px) {
+    span.HeaderMenu-Item{
+        display: initial;
+    }
+    .ToggleButton{
+        cursor: pointer;
+    }
+    header{
+        box-shadow:none;
+        padding:0 16px;
+    }
+    header div.Logo{
+        display:flex;
+        align-items: center;
+        padding:0;
+    }
+    header div.Logo span,
+    header div.Logo h3{
+        display: flex;
+    }
+    header div.Logo span{
+        width: 40px;
+        height: 40px;
+        padding:8px;
+        margin-right: 16px;
+    }
+    header div.Logo span svg{
+        width: 24px;
+        height: 24px;
+        fill: rgb(96,96,96)
+    }
+    header div.Logo svg{
+        width: 80px;
+        height: 24px;
+    }
+    header div.Logo h3{
+        margin-left: 2px;
+        margin-bottom: 12px;
+        font-weight: 400;
+        font-size: 10px;
+        color: #606060;
+        display:block
+    }
+    div.Header-Menu{
+        display: flex;
+        gap: 8px;
+    }
+    div.Header-Menu img{
+        width: 32px;
+        height: 32px;
+    }
+    div.Header-Menu span{
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+    }
+    div.Header-Menu span svg{
+        fill: rgb(96,96,96)
+    }
+    span[get=search]{
+        display: none;
+    }
+    div.Header-Menu span[get=HeaderAvatar]{
+        padding: 1px 6px;
+        width: 60px
+    };
+    div Header div.SearchBar{
+        width: 728px;
+        height: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+h3{
+    display: flex;
+    max-height: 34px;
+    overflow: hidden;
+}
+div.ContentItem{
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+div.ContentItem div.Video{ 
+    width: 100%;    
+    height: 56.3vw;
+    background-color: rgba(0, 128, 0, 0.455);
+}
+div.Description{
+    width: 100%;
+    height: 116px;
+    padding: 4px 0 16px 12px;
+    display: flex;
+} 
+div.Description img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin-top:8px
+}
+div.InfoBox{
+    width: 100%;
+    margin-left: 12px;
+}
+div.InfoBox {
+    margin-top: 8px;
+}
+div.InfoBox h3{
+    font-size: 14px;
+    color:#111111;
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+div.InfoBox span{
+    font-size: 12px;
+    color: #111111;
+    opacity: 0.6;
+    margin-right: 4px;
+}
+div.AnuncioLogo-Brand-Container{
+    padding: 4px 0;
+    display: flex;
+}
+div.AnuncioLogo-Brand-Container div[isad=true],
+div.AnuncioLogo-Brand-Container div[isad=videoList]{
+    padding: 2px 4px;
+    background: #E6BC27;
+    color:white;
+    font-size: 12px;
+}
+div.AnuncioLogo-Brand-Container span{
+    padding: 2px 4px;
+}
+div.InfoBox a{
+    font-size: 12px;
+    color:#1679c5;
+    margin-top: 3px;
+}
+div.Options{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    padding:8px;
+}
+div#AdClipArt[isad=false]{
+    display: none;
+}
+span#description[isad=false]{
+    display:none;
+}
+div[normaldescription=true]{
+    width: 100%;
+    text-justify: center;
+}
+div[normaldescription=true] span{
+    padding: 0;
+}
+div.Options svg{
+    width: 24px;
+    height: 24px;
+    fill: rgb(144,144,144)
+}
+span[display=false]{
+    display:none
+}
+div.ContentItem{
+    margin-bottom: 17px;
+}
+#banner{
+   display:none;
+}
+#AdDescription{
+    display:flex;
+}
+@media ( min-width:588px){
+    div.ContentItem div.Video{ 
+        height: 26.4vw;
+    }
+    div.Description{
+        padding: 0;
+        margin: 4px 0 24px;
+        height: 80px;
+    }
+    div.Options{
+        padding: 8px;
+    }
+    div.AnuncioLogo-Brand-Container{
+        padding: 0;
+    }
+    div.AnuncioLogo-Brand-Container span{
+        padding: 1px 4px 3px;
+    }
+    div.Description h3,
+    div.AnuncioLogo-Brand-Container span{
+        overflow-wrap: break-word;
+        max-height: 34px;
+        overflow: hidden;
+        margin-bottom:0;
+    }
+    div.AnuncioLogo-Brand-Container span.ChannelNAme{
+        padding-left: 0;
+        padding-bottom:0;
+    }
+    div.AnuncioLogo-Brand-Container span.Dot{
+        padding: 0;
+    }
+    div#AdClipArt{
+        margin-right: 6px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 2;
+        padding: 0 4px ;
+    }
+    div.ContentItem{
+        margin-bottom: 28px;
+    }
+    span#description{
+        line-height: 0.5;
+    }
+    div.InfoBox{
+        height: fit-content;
+    }
+    
+}
+@media ( min-width: 874px){
+
+    div.ContentItem div.Video{ 
+        height: 17.45vw;
+    }
+    div.InfoBox h3{
+        margin-bottom: 8px;
+    }
+    div.AnuncioLogo-Brand-Container{
+        padding: 8px 0;
+        margin: 5px 0;
+    }
+    div.InfoBox a{
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    div.Description{
+        margin-bottom: 1px;
+    }    
+    div#AdClipArt{
+        margin-right: 6px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 2;
+        padding: 0 4px ;
+    }
+    span#description{
+        line-height: 90%;
+    }
+}
+@media (min-width:1025px){
+    div.ContentItem{
+       max-width: 295px;
+    }
+    div.Video{
+        min-height: 12.15vw;
+    }
+    div.Description img{
+        width: 36px;
+        height: 36px;
+        margin-right: 0;
+    }
+
+    span#description{
+        display: none;
+    }
+    div.ContentItem[isad=videoList] div.Video,
+    div.ContentItem[isad=true] div.Video{
+        min-width: 100%;
+    }
+    div.ContentItem[isad=videoList]{
+        display:none;
+    }
+
+     div.ContentItem[isad=true]{
+        min-width: 100%;
+        min-height: 100%;
+        display: grid;
+        gap: 16px;
+        grid-template-columns: 424px 1fr;
+        grid-template-rows: 239px;
+    }
+    div.ContentItem[isad=true] div.Video{
+        width: 424px;
+        height:239px;
+        max-width: 424px;
+        max-height: 239px;
+    }
+    div.ContentItem[isad=false] div.Description{
+        display:flex
+    }
+    div.ContentItem[isad=true] div.Description{
+        margin:0;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    div.ContentItem[isad=false] #ThumbNail{
+        width: 36px;
+    }
+    div.ContentItem[isad=true] #ThumbNail{
+        display:flex;
+        height: 100%;
+        align-items: center;
+    }
+    div.ContentItem[isad=true] #ThumbNail img{
+        width: 80px;
+        height: 80px;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+    div.ContentItem[isad=true] #banner[isad=true]{
+        display: initial;
+        background-size: cover;
+        width: 100%;
+        border-radius: 0;
+        height: 102px;
+        margin:0;
+    }
+    div.ContentItem[isad=true] div.InfoBox{
+        display:flex;
+        flex-direction: column ;
+        align-items: flex-start !important;
+        justify-content: center;
+        margin-top: 0;
+        height:100% !important;
+        line-height: 1;
+        align-items: center;
+        margin-left: 20px;
+    }
+    div.ContentItem[isad=false] #AdDescription{
+        display:flex;
+        flex-direction: row;
+    }
+    div.ContentItem[isad=true] #AdDescription{
+        display:flex;
+        height:100%;
+    }
+    div.ContentItem[isad=false] div.InfoBox{
+        display:flex;
+        flex-direction: column;
+
+    }
+    div.ContentItem[isad=true] div.InfoBox a{ 
+        color: white;
+        font-size: 14px;
+        padding: 10px 16px;
+        background-color: rgb(6, 95, 212);
+    }
+
+
+}
+@media ( min-width:1160px){
+    div.InfoBox span{
+        font-size: 12px;
+        color: #111111;
+        opacity: 0.6;
+        margin-right: 0;
+    }
+    div.AnuncioLogo-Brand-Container span{
+        padding: 2px 4px 0px;
+    }
+
+}
+
+@media ( min-width:1366px){
+    div.ContentItem div.Video{ 
+        height: 12vw;
+    }
+}
+
